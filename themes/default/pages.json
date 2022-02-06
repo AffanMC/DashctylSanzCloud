@@ -17,7 +17,6 @@
         "regenpassword": "/settings",
         "setresources": "/admin",
         "failedsetresources": "/admin",
-        "giftresources": "/gift",
         "failedgiftresources": "/gift",
         "renewserver": "/dashboard",	
         "setcoins": "/admin",	
@@ -47,7 +46,6 @@
         "admin": "admin.ejs",
         "redeem": "redeem.ejs",
         "settings": "settings.ejs",
-        "gift": "gift.ejs",
         "j4r": "j4r.ejs",
         "coins": "coins.ejs",
         "store": "store.ejs",
@@ -61,7 +59,6 @@
         "/servers/edit",
         "/settings",
         "/j4r",
-        "/gift",
         "/store",
         "/coins",
         "/lv"
