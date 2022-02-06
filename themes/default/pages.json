@@ -68,10 +68,10 @@
     ],
     "variables": {
         "footerad": true,
-        "faviconlink": "Set a favicon here",
+        "faviconlink": "https://cdn.discordapp.com/attachments/890807422606786580/939766073161576488/7c1d22685fffc1b1ebf735d0640cb954_2.png",
         "home": {
-            "title": "Heliactyl",
-            "name": "Heliactyl",
+            "title": "LegendaryHeliactyl",
+            "name": "LegendaryHeliactyl",
             "buttontext": {
                 "loggedin": {
                     "text": "Back to Dashboard",
