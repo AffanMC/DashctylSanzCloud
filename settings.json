@@ -1,5 +1,5 @@
 {
-  "version": "11.4.2",
+  "version": "1.0.0",
   "defaulttheme": "default",
   "website": {
     "port": 80,
@@ -84,7 +84,7 @@
         "overresourcessuspend": false,
         "renewsuspendsystem": {
           "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
-          "enabled": true,
+          "enabled": false,
           "time": 2880,
           "cost": 600
         }
@@ -93,7 +93,7 @@
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
         "id": "937726222195105802",
         "secret": "DfPVF1cVV23ieJ21Y9hCqqi7iAJqc1p0",
-        "link": "https://client.legendarynetwork.xyz",
+        "link": "https://LegendaryHeliactyl.amirumna.repl.co",
         "callbackpath": "/callback",
         "prompt": true,
 
@@ -120,10 +120,22 @@
         "default": "default",
         "list": {
           "default": {
-            "ram": 1024,
-            "disk": 1024,
-            "cpu": 100,
-            "servers": 1
+            "ram": 3072,
+            "disk": 10240,
+            "cpu": 125,
+            "servers": 2
+          },
+          "booster": {
+            "ram": 9216,
+            "disk": 20480,
+            "cpu": 200,
+            "servers": 6
+          },
+          "vip": {
+            "ram": 5120,
+            "disk": 30720,
+            "cpu": 160,
+            "servers": 15
           }
         }
       },
@@ -133,10 +145,22 @@
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
+        },
+        "2": {
+          "name": "Germany",
+
+          "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
+          "package": null
+        },
+        "3": {
+          "name": "Priority (Vip & Node Access only)",
+
+          "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
+          "package": ["booster", "vip"]
         }
       },
       "eggs": {
-       "paper": {
+        "paper": {
           "display": "Minecraft Java",
           "minimum": {
             "ram": 1024,
@@ -150,15 +174,121 @@
           },
           "info": {
             "egg": 3,
-            "docker_image": "ghcr.io/pterodactyl/yolks:java_17",
+            "docker_image": "quay.io/parkervcp/pterodactyl-images:debian_openjdk-16",
             "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
             "environment": {
               "SERVER_JARFILE": "server.jar",
               "BUILD_NUMBER": "latest"
             },
             "feature_limits": {
-              "databases": 4,
-              "backups": 4
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+        "forge": {
+          "display": "Minecraft Forge",
+          "minimum": {
+            "ram": 512,
+            "disk": 512,
+            "cpu": 75
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 2,
+            "docker_image": "quay.io/pterodactyl/core:java",
+            "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
+            "environment": {
+              "SERVER_JARFILE": "server.jar",
+              "MC_VERSION": "latest",
+              "BUILD_TYPE": "recommended"
+            },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+        "vanilla": {
+          "display": "Minecraft Vanilla",
+          "minimum": {
+            "ram": 512,
+            "disk": 512,
+            "cpu": 75
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 5,
+            "docker_image": "quay.io/pterodactyl/core:java",
+            "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
+            "environment": {
+              "SERVER_JARFILE": "server.jar",
+              "VANILLA_VERSION": "latest"
+            },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+        "sponge": {
+          "display": "Minecraft Sponge",
+          "minimum": {
+            "ram": 512,
+            "disk": 512,
+            "cpu": 75
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 4,
+            "docker_image": "quay.io/pterodactyl/core:java-glibc",
+            "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
+            "environment": {
+              "SERVER_JARFILE": "server.jar",
+              "SPONGE_VERSION": "1.12.2-7.3.0"
+            },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+        "pocketminemp": {
+          "display": "Minecraft Bedrock",
+          "minimum": {
+            "ram": 512,
+            "disk": 512,
+            "cpu": 75
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 19,
+            "docker_image": "quay.io/parkervcp/pterodactyl-images:base_debian",
+            "startup": "./bin/php7/bin/php ./PocketMine-MP.phar --no-wizard --disable-ansi",
+            "environment": {
+              "VERSION": "latest",
+              "GITHUB_PACKAGE": "pmmp/PocketMine-MP",
+              "MATCH": "PocketMine-MP.phar"
+            },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
             }
           }
         },
@@ -176,15 +306,111 @@
           },
           "info": {
             "egg": 1,
-            "docker_image": "ghcr.io/pterodactyl/yolks:java_17",
+            "docker_image": "quay.io/pterodactyl/core:java",
             "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -jar {{SERVER_JARFILE}}",
             "environment": {
               "SERVER_JARFILE": "bungeecord.jar",
               "BUNGEE_VERSION": "latest"
             },
             "feature_limits": {
-              "databases": 4,
-              "backups": 4
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+	"discord.js": {
+          "display": "Discord.js (NEW)",
+          "minimum": {
+            "ram": 1,
+            "disk": 1,
+            "cpu": 1
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 17,
+            "docker_image": "quay.io/parkervcp/pterodactyl-images:debian_nodejs-12",
+            "startup": "node {{BOT_JS_FILE}}",
+            "environment": {
+              "BOT_JS_FILE": "index.js",
+	      "NODE_PACKAGES": "",	
+	      "USER_UPLOAD": "0",
+	      "AUTO_UPDATE": "0",
+	      "PASSWORD": "",
+	      "INSTALL_BRANCH": "",
+	      "INSTALL_REPO": "",
+	      "USERNAME": ""
+            },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+	"discord.py": {
+          "display": "Discord.py (NEW)",
+          "minimum": {
+            "ram": 1,
+            "disk": 1,
+            "cpu": 1
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 21,
+            "docker_image": "quay.io/parkervcp/pterodactyl-images:debian_python-3.8",
+            "startup": "python {{BOT_PY_FILE}}",
+            "environment": {
+              "BOT_PY_FILE": "bot.py",
+	      "PY_PACKAGES": "",	
+	      "USER_UPLOAD": "0",
+	      "AUTO_UPDATE": "0",
+	      "PASSWORD": "",
+	      "INSTALL_BRANCH": "",
+	      "INSTALL_REPO": "",
+	      "USERNAME": "",
+          "REQUIREMENTS_FILE": "requirements.txt"
+           },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
+            }
+          }
+        },
+        "fivem": {
+          "display": "GTA FiveM (NEW)",
+          "minimum": {
+            "ram": 512,
+            "disk": 512,
+            "cpu": 75
+          },
+          "maximum": {
+            "ram": null,
+            "disk": null,
+            "cpu": null
+          },
+          "info": {
+            "egg": 20,
+            "docker_image": "quay.io/parkervcp/pterodactyl-images:base_debian",
+            "startup": "{{STARTUP_CMD}}",
+            "environment": {
+              "MAX_PLAYERS": "32",
+              "SERVER_HOSTNAME": "NEW FXServer hosted by Hexit",
+              "FIVEM_VERSION": "latest",
+              "FIVEM_LICENSE": "idfk",
+              "STEAM_WEBAPIKEY": "none",
+              "TXADMIN_PORT": "40120",
+              "TXADMIN_ENABLE": "0"
+            },
+            "feature_limits": {
+              "databases": 1,
+              "backups": 1
             }
           }
         }
@@ -195,16 +421,16 @@
           "_comment": "The cost and per is not intended to used with 0. This is not intended to sell resources for coins. Make sure coins are enabled too, or else there can be errors.",
           "enabled": true,
           "ram": {
-            "cost": 250,
+            "cost": 500,
             "per": 1024
           },
           "disk": {
-            "cost": 100,
-            "per": 1000
+            "cost": 50,
+            "per": 1024
           },
           "cpu": {
-            "cost": 300,
-            "per": 200
+            "cost": 250,
+            "per": 100
           },
           "servers": {
             "cost": 100,
