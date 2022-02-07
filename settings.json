@@ -51,7 +51,7 @@
          ]
        },
        "bot": {
-         "token": "OTM3NzI2MjIyMTk1MTA1ODAy.Yff7mQ.L02Arm00FBjPFDls99JnyGgPdK8",
+         "token": "OTM3NzI2MjIyMTk1MTA1ODAy.Yff7mQ.SzKYAQ0nWZuxcdBoZWt-DXC2a9c",
          "joinguild": {
            "_comment": "The Discord bot must be in these servers and have invite permissions.",
            "enabled": true,
@@ -63,7 +63,7 @@
         "webhook_url": "https://discord.com/api/webhooks/940071881887842315/zXNC_xi54SvXofxU_DDHRv0aE8mDIhajEy5R-FrbCd6apijriZkFbW-bdHX0kbO5R0ui",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with dashactyl, not ptero)",
-          "enabled": false,
+          "enabled": true,
           "_comment2": "The types of notifications disabled. Values: ADMIN, LOGIN, SERVER, COUPONREDEEM",
           "disabled": []
         }
