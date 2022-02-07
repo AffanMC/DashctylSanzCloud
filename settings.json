@@ -60,7 +60,7 @@
       },
       "webhook": {
         "_comment": "URL of the webhook to send messages to.",
-        "webhook_url": "https://discord.com/api/webhooks/939681943946133504/aFr-iqlAN5HKFxoe9TEsJounXXqLQSCdoZlt5tKLlRp14TIpI5yAhKxUp0J7_L0j5Xek",
+        "webhook_url": "https://discord.com/api/webhooks/940071881887842315/zXNC_xi54SvXofxU_DDHRv0aE8mDIhajEy5R-FrbCd6apijriZkFbW-bdHX0kbO5R0ui",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with dashactyl, not ptero)",
           "enabled": true,
