@@ -60,10 +60,10 @@
       },
       "webhook": {
         "_comment": "URL of the webhook to send messages to.",
-        "webhook_url": "https://discord.com/api/webhooks/940071881887842315/zXNC_xi54SvXofxU_DDHRv0aE8mDIhajEy5R-FrbCd6apijriZkFbW-bdHX0kbO5R0ui",
+        "webhook_url": "",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with dashactyl, not ptero)",
-          "enabled": true,
+          "enabled": false,
           "_comment2": "The types of notifications disabled. Values: ADMIN, LOGIN, SERVER, COUPONREDEEM",
           "disabled": []
         }
@@ -93,7 +93,7 @@
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
         "id": "937726222195105802",
         "secret": "DfPVF1cVV23ieJ21Y9hCqqi7iAJqc1p0",
-        "link": "https://client.legendarynetwork.xyz",
+        "link": "https://legendaryheliactyl.amirumna.repl.co",
         "callbackpath": "/callback",
         "prompt": true,
 
