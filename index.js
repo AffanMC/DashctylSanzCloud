@@ -1,10 +1,3 @@
-//
-// Heliactyl 11, Codename Kanjut
-// 
-//  * Copyright Heliactyl 2021 - 2022
-//  * Please read the "License" file
-//
-
 "use strict";
 
 // Load packages.
@@ -34,7 +27,6 @@ module.exports.renderdataeval =
   `(async () => {
    let newsettings = JSON.parse(require("fs").readFileSync("./settings.json"));
 	const JavaScriptObfuscator = require('javascript-obfuscator');
-
  
     let renderdata = {
       req: req,
@@ -66,11 +58,9 @@ module.exports.renderdataeval =
         let everywhat = \${newsettings.api.arcio["afk page"].every};
         let gaincoins = \${newsettings.api.arcio["afk page"].coins};
         let arciopath = "\${newsettings.api.arcio["afk page"].path.replace(/\\\\/g, "\\\\\\\\").replace(/"/g, "\\\\\\"")}";
-
         \${arciotext}
       \`);
     };
-
     return renderdata;
   })();`;
 
@@ -113,7 +103,7 @@ const listener = app.listen(settings.website.port, function() {
   console.log(chalk.green("[Heliactyl] Finishing & deploying Heliactyl..."));
   console.log(chalk.green("----------------------------------------------------"));
   console.log(chalk.green("Heliactyl: v11 - Kanjut"));
-  console.log(chalk.green("Release: v11.4.2"));
+  console.log(chalk.green("Release: v11.4.3"));
   console.log(chalk.green("----------------------------------------------------"));
   console.log(chalk.green("Your dashboard will now be available on port " + listener.address().port + " "));
   console.log(chalk.green("----------------------------------------------------"));
