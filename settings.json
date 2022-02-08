@@ -120,22 +120,22 @@
         "default": "default",
         "list": {
           "default": {
-            "ram": 3072,
-            "disk": 10240,
-            "cpu": 150,
-            "servers": 2
+            "ram": 2048,
+            "disk": 10000,
+            "cpu": 100,
+            "servers": 1
           },
           "booster": {
-            "ram": 9216,
-            "disk": 30480,
+            "ram": 4096,
+            "disk": 40000,
             "cpu": 400,
-            "servers": 6
+            "servers": 2
           },
           "vip": {
-            "ram": 9216,
-            "disk": 30720,
-            "cpu": 500,
-            "servers": 6
+            "ram": 8192,
+            "disk": 80000,
+            "cpu": 800,
+            "servers": 4
           }
         }
       },
