@@ -81,12 +81,12 @@
           "modify": true,
           "delete": true
         },
-        "overresourcessuspend": false,
+        "overresourcessuspend": true,
         "renewsuspendsystem": {
           "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
-          "enabled": false,
-          "time": 2880,
-          "cost": 600
+          "enabled": true,
+          "time": 7200,
+          "cost": 300
         }
       },
       "oauth2": {
@@ -447,8 +447,8 @@
     },
     "arcio": {	
       "_comment": "You can make an arc.io widget on https://arc.io. You can get money using arc.io.",	
-      "enabled": false,	
-      "widgetid": "This usually a 6 digit ID that you can find on Arc Installation page",	
+      "enabled": true,	
+      "widgetid": "6dWuxm7f",	
       "afk page": {	
         "_comment": "This will not effect any current arc.io sessions, and will require a restart to kick everyone out of the websocket sesison.",	
         "_comment2": "Make sure coins are enabled if you choose to enable this option!",	
