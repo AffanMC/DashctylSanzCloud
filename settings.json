@@ -141,19 +141,25 @@
       },
       "locations": {
         "1": {
-          "name": "Singapore",
+          "name": "Singapore 1",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
         },
         "2": {
-          "name": "Germany",
+          "name": "Singapore 2",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
         },
         "3": {
-          "name": "Priority (Vip & Node Access only)",
+          "name": "Germany",
+
+          "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
+          "package": null
+        },
+        "4": {
+          "name": "Private (Vip & Node Access only)",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": ["booster", "vip"]
