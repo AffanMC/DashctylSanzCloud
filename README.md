@@ -1,5 +1,5 @@
 
-![Heliactyl](https://cdn.discordapp.com/attachments/881207010417315861/934443905326383204/Copy_of_Copy_of_Fgffgg_22.png)
+![LegendaryHeliactyl](https://cdn.discordapp.com/attachments/890807422606786580/940418268710207499/unknown.png)
 
 <hr>
 
