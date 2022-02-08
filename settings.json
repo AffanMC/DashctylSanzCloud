@@ -97,7 +97,7 @@
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
         "id": "937726222195105802",
         "secret": "DfPVF1cVV23ieJ21Y9hCqqi7iAJqc1p0",
-        "link": "https://legendaryheliactyl.amirumna.repl.co",
+        "link": "https://client.legendarynetwork.xyz",
         "callbackpath": "/callback",
         "prompt": true,
 
