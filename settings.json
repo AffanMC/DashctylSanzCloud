@@ -161,7 +161,7 @@
       },
       "eggs": {
         "paper": {
-          "display": "Minecraft Java",
+          "display": "Minecraft Paper",
           "minimum": {
             "ram": 1024,
             "disk": 1024,
