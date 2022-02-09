@@ -88,7 +88,7 @@
         "overresourcessuspend": true,
         "renewsuspendsystem": {
           "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
-          "enabled": true,
+          "enabled": false,
           "time": 7200,
           "cost": 300
         }
