@@ -1,6 +1,7 @@
 {
   "version": "11.4.3",
   "defaulttheme": "default",
+  "warning": "To run Heliactyl on a domain, you need to setup a reverse proxy, the guide is on our GitHub",
   "website": {
     "port": 80,
     "secret": "amiruman1981"
