@@ -125,7 +125,7 @@
         "list": {
           "default": {
             "ram": 2048,
-            "disk": 10000,
+            "disk": 2048,
             "cpu": 100,
             "servers": 1
           },
@@ -144,13 +144,13 @@
         }
       },
       "locations": {
-        "4": {
+        "5": {
           "name": "Random",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
         },
-        "10": {
+        "6": {
           "name": "Private (Vip & Node Access only)",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
