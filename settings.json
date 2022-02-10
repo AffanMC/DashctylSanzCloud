@@ -3,7 +3,6 @@
   "defaulttheme": "default",
   "website": {
     "port": 80,
-    "warning": "To run Heliactyl on a domain, you need to setup a reverse proxy, the guide is on our GitHub",
     "secret": "amiruman1981"
   },
   "pterodactyl": {
