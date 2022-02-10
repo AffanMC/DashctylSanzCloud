@@ -7,15 +7,15 @@
     "secret": "amiruman1981"
   },
   "pterodactyl": {
-    "domain": "https://panel.legendarynetwork.xyz",
+    "domain": "https://panel.sanz-cloud.my.id",
     "note": "Don't put a / in the domain, only put for example https://panel.heliactyl.xyz or server link wont work",
-    "key": "9gRo0uyC2kZS6zJCP4iX8iaqHGXVeIiT8AbBPBywHFpxukbT"
+    "key": "2puO0bfItiqqmcVzrdCaNDcDlcEvOevf2PmquVVyrgjFfPrw"
   },
   "limits": {
     "note": "This allows you to control the maximum amount of resources anyone can buy from the resources store.",
     "ram":8194,
     "cpu":800,
-    "servers":4,
+    "servers":5,
     "disk":40000
   },
   "ads": {
@@ -32,39 +32,39 @@
        },
        "j4r": {
          "enabled": true,
-         "servers": ["861606039014473728", "908725591526760489", "934989365711605802", "857086921163800576"],
+         "servers": ["939104802003091456", "935710543560441958", "908725591526760489"],
          "every": {
              "cpu": 50,
              "ram": 1024,
              "disk": 1024,
-             "servers": 0
+             "servers": 1
          },
          "j4rads": [
              {
-             	"name": "Macroboy Community",
-                "invite": "https://discord.gg/faAYA4SXaF"
+             	"name": "SanzID - Community & Service",
+                "invite": "https://discord.gg/6mVTACSj8S"
          	 },
              {
-                 "name": "Sandal SMP",
-                 "invite": "https://discord.gg/7tBJGuHkWR"
+                 "name": "CS Shop - DIGITAL STORE & COMMUNITY",
+                 "invite": "https://discord.gg/2KGWxwzPjn"
          	 },
              {
-                 "name": "Hera Cloud",
-                 "invite": "https://dsc.gg/heracloud"
+                 "name": "Legendary Network X Free Hosting",
+                 "invite": "https://discord.legendarynetwork.xyz"
          	 }
          ]
        },
        "bot": {
-         "token": "OTM3NzI2MjIyMTk1MTA1ODAy.Yff7mQ.SzKYAQ0nWZuxcdBoZWt-DXC2a9c",
+         "token": "OTQxMjg4NzE4NTA4MTMwMzM1.YgTxbg.0VtK0NdsEu3CaQyq_V2Cb9pFDFg",
          "joinguild": {
            "_comment": "The Discord bot must be in these servers and have invite permissions.",
            "enabled": true,
-           "guildid": ["908725591526760489"]
+           "guildid": ["932987061236023307"]
         }
       },
       "webhook": {
         "_comment": "URL of the webhook to send messages to.",
-        "webhook_url": "https://discord.com/api/webhooks/940071881887842315/zXNC_xi54SvXofxU_DDHRv0aE8mDIhajEy5R-FrbCd6apijriZkFbW-bdHX0kbO5R0ui",
+        "webhook_url": "https://discord.com/api/webhooks/941289448186986506/YiWo_RxbSolNnHI3OnUn8M3AsMxeX3jFUqaEXdg8NAS7Eb-GlK6oZ9qmfbakgzBociA_",
         "auditlogs": {
           "_comment": "This feature allows you to log actions, and get an overview of a users actions (only works if done with dashactyl, not ptero)",
           "enabled": true,
@@ -95,9 +95,9 @@
       },
       "oauth2": {
         "_comment": "Go to https://discord.dev/ and create an application to set these up.",
-        "id": "937726222195105802",
-        "secret": "DfPVF1cVV23ieJ21Y9hCqqi7iAJqc1p0",
-        "link": "https://client.legendarynetwork.xyz",
+        "id": "941288718508130335",
+        "secret": "0Nkq9C9q6U2TPS2O3t7RuaWCugRLflu_",
+        "link": "https://dash.sanz-cloud.my.id",
         "callbackpath": "/callback",
         "prompt": true,
 
@@ -129,13 +129,13 @@
             "cpu": 100,
             "servers": 1
           },
-          "booster": {
+          "vip": {
             "ram": 4096,
             "disk": 40000,
             "cpu": 400,
             "servers": 2
           },
-          "vip": {
+          "yt": {
             "ram": 8192,
             "disk": 80000,
             "cpu": 800,
@@ -145,21 +145,21 @@
       },
       "locations": {
         "5": {
-          "name": "Random",
+          "name": "Free Hosting",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
         },
         "6": {
-          "name": "Private (Vip & Node Access only)",
+          "name": "Private (VIP & YT Only)",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
-          "package": ["booster", "vip"]
+          "package": ["vip", "yt"]
         }
       },
       "eggs": {
         "paper": {
-          "display": "Minecraft Paper",
+          "display": "Paper",
           "minimum": {
             "ram": 1024,
             "disk": 1024,
@@ -185,7 +185,7 @@
           }
         },
         "forge": {
-          "display": "Minecraft Forge",
+          "display": "Forge",
           "minimum": {
             "ram": 512,
             "disk": 512,
@@ -212,7 +212,7 @@
           }
         },
         "vanilla": {
-          "display": "Minecraft Vanilla",
+          "display": "Vanilla",
           "minimum": {
             "ram": 512,
             "disk": 512,
@@ -238,7 +238,7 @@
           }
         },
         "sponge": {
-          "display": "Minecraft Sponge",
+          "display": "Sponge",
           "minimum": {
             "ram": 512,
             "disk": 512,
@@ -264,7 +264,7 @@
           }
         },
         "pocketminemp": {
-          "display": "Minecraft Bedrock",
+          "display": "Bedrock",
           "minimum": {
             "ram": 512,
             "disk": 512,
@@ -291,7 +291,7 @@
           }
         },
         "bungeecord": {
-          "display": "Minecraft BungeeCord",
+          "display": "Bungeecord",
           "minimum": {
             "ram": 512,
             "disk": 512,
@@ -317,7 +317,7 @@
           }
         },
 	"discord.js": {
-          "display": "Discord.js (NEW)",
+          "display": "Discord.js",
           "minimum": {
             "ram": 1,
             "disk": 1,
@@ -349,7 +349,7 @@
           }
         },
 	"discord.py": {
-          "display": "Discord.py (NEW)",
+          "display": "Discord.py",
           "minimum": {
             "ram": 1,
             "disk": 1,
@@ -382,7 +382,7 @@
           }
         },
         "fivem": {
-          "display": "GTA FiveM (NEW)",
+          "display": "JMusicBot",
           "minimum": {
             "ram": 512,
             "disk": 512,
@@ -392,23 +392,6 @@
             "ram": null,
             "disk": null,
             "cpu": null
-          },
-          "info": {
-            "egg": 20,
-            "docker_image": "quay.io/parkervcp/pterodactyl-images:base_debian",
-            "startup": "{{STARTUP_CMD}}",
-            "environment": {
-              "MAX_PLAYERS": "32",
-              "SERVER_HOSTNAME": "NEW FXServer hosted by Hexit",
-              "FIVEM_VERSION": "latest",
-              "FIVEM_LICENSE": "idfk",
-              "STEAM_WEBAPIKEY": "none",
-              "TXADMIN_PORT": "40120",
-              "TXADMIN_ENABLE": "0"
-            },
-            "feature_limits": {
-              "databases": 1,
-              "backups": 1
             }
           }
         }
@@ -448,9 +431,9 @@
         "_comment3": "If you change the path, you need to restart for it to take full effect.",	
         "path": "afkwspath",	
         "_comment4": "This afk page will give the users [coins variable] coins every [every variable] seconds.",	
-        "every": 60,	
+        "every": 120,	
         "_comment5": "The coins variable is meant to not be under 1. There may be bugs if the coins variable is less than 1.",	
-        "coins": 1
+        "coins": 10
       }	
     }
   }
