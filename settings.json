@@ -85,7 +85,7 @@
           "modify": true,
           "delete": true
         },
-        "overresourcessuspend": true,
+        "overresourcessuspend": false,
         "renewsuspendsystem": {
           "_comment": "This feature requires a restart in order to work. Also, this requires every server to start suspended, or else this feature would not work for some servers.",
           "enabled": false,
@@ -172,7 +172,7 @@
           },
           "info": {
             "egg": 3,
-            "docker_image": "quay.io/pterodactyl/core:java",
+            "docker_image": "",
             "startup": "java -Xms128M -Xmx{{SERVER_MEMORY}}M -Dterminal.jline=false -Dterminal.ansi=true -jar {{SERVER_JARFILE}}",
             "environment": {
               "SERVER_JARFILE": "server.jar",
