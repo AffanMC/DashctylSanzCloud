@@ -1,78 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    
-        <script async src="https://arc.io/widget.min.js#6dWuxm7f"></script>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>LegendaryHeliactyl</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="/assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="/assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="/assets/vendors/jvectormap/jquery-jvectormap.css">
-    <link rel="stylesheet" href="/assets/vendors/flag-icon-css/css/flag-icon.min.css">
-    <link rel="stylesheet" href="/assets/vendors/owl-carousel-2/owl.carousel.min.css">
-    <link rel="stylesheet" href="/assets/vendors/owl-carousel-2/owl.theme.default.min.css">
-    <!-- End plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="/assets/images/favicon.png" />
-    <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/890807422606786580/940817910878859264/download-_7_-removebg-preview.png">
-</head>
-  <body>
-    <div class="container-scroller">
-      <div class="container-fluid page-body-wrapper full-page-wrapper">
-        <div class="row w-100 m-0">
-          <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
-            <div class="card col-lg-4 mx-auto">
-              <div class="card-body px-5 py-5">
-                <form>
-                  <div class="text-center">
-                    <br>
-                    <center><h3>Login To Continue</h3>
-                    <br>
-                    <h5>Get Your Server Now For Free 24/7</h5></center>
-<br>
-                    <a role="button" class="btn btn-primary btn-block enter-btn" style="padding: 14px 25px;" href="/login">LOGIN USING DISCORD</a>
-                    <br>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <!-- content-wrapper ends -->
-        </div>
-        <!-- row ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
-    <!-- plugins:js -->
-<script src="/assets/vendors/js/vendor.bundle.base.js"></script>
-<!-- endinject -->
-<!-- Plugin js for this page -->
-<!-- End plugin js for this page -->
-<!-- inject:js -->
-<script src="/assets/js/off-canvas.js"></script>
-<script src="/assets/js/hoverable-collapse.js"></script>
-<script src="/assets/js/misc.js"></script>
-<script src="/assets/js/settings.js"></script>
-<script src="/assets/js/todolist.js"></script>
-<!-- endinject -->
-  </body>
-</html>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Login to access the dashboard.">
-  <meta name="keywords" content="hosting, free hosting, mc, mc hosting, minecraft">
-  <meta name="author" content="Dashboard">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="<%= extra.home.topmsg %>">
+  <meta name="author" content="<%= extra.faviconlink %>">
+  <link rel="icon" type="image/png" href="<%= extra.faviconlink %>" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link href="https://cdn.discordapp.com/attachments/890807422606786580/940817910878859264/download-_7_-removebg-preview.png" rel="icon" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="/assets/argon/vendor/nucleo/css/nucleo.min.css" rel="stylesheet">
+  <link href="/assets/argon/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link type="text/css" href="/assets/argon/css/argon.min.css" rel="stylesheet">
+  <title><%= extra.home.title %></title>
+  <% if (settings.api.arcio.enabled == true) { %>
+  <script async src="https://arc.io/widget.min.js#<%= settings.api.arcio.widgetid %>"></script>
+  <% } %>
 </head>
+
+<body class="bg-default">
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Header -->
+    <div class="header bg-gradient-primary py-7 py-lg-8 pt-lg-9">
+      <div class="container">
+        <div class="header-body text-center mb-7">
+          <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 col-md-8 px-5">
+              <h1 class="text-white"><%= extra.home.topmsg %></h1>
+              <p class="text-lead text-white"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="separator separator-bottom separator-skew zindex-100">
+        <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+          xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container mt--8 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card bg-secondary border-0 mb-0">
+            <div class="card-header bg-transparent pb-5">
+              <center>
+                <h4 class="card-title"></h4>
+                <br>
+                    <a role="button" class="btn btn-primary btn-rounded" 
+                     href="<%= userinfo ? extra.home.buttontext.loggedin.link : extra.home.buttontext.loggedout.link %>"><%= userinfo ? extra.home.buttontext.loggedin.text : extra.home.buttontext.loggedout.text %> 
+                  <img src="https://i.imgur.com/EYGXn9D.png" width="25" /> 
+                  </a> 
+                  <br />
+                <br />
+                By clicking on "Login with discord", You agree to our Terms & Conditions and Privacy Policy.
+            </div>
+            <br />
+            <br />
+
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/argon/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/argon/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/argon/js/argon.min.js"></script>
+</body>
+
+</html>
