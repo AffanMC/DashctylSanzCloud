@@ -32,11 +32,11 @@
        },
        "j4r": {
          "enabled": true,
-         "servers": ["LegendaryNetwork"],
+         "servers": ["861606039014473728", "908725591526760489", "934989365711605802", "857086921163800576"],
          "every": {
-             "cpu": 10,
-             "ram": 512,
-             "disk": 512,
+             "cpu": 500,
+             "ram": 1024,
+             "disk": 1024,
              "servers": 0
          },
          "j4rads": [
@@ -145,13 +145,7 @@
       },
       "locations": {
         "4": {
-          "name": "Singapore",
-
-          "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
-          "package": null
-        },
-        "3": {
-          "name": "Germany",
+          "name": "Random",
 
           "_comment": "Make 'package' be null to allow anyone with enough resources in their plan to create a server with this location. Also, make the 'package' variable an array, like [], with the location names with quotes to make a user be required to have a plan in order to use the package.",
           "package": null
